@@ -59,7 +59,7 @@ header, nav, main {
     max-width: 80%;
 }
 
-header, main, figure {
+header, ul, main, figure {
     border-radius: 2rem;
 }
 
@@ -70,7 +70,7 @@ body {
 
 header {
     background-color: #FAF1E4;
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
 header img {
@@ -78,12 +78,32 @@ header img {
 }
 
 nav ul {
-    background-color: #CEDEBD;
+    background-color: #9EB384;
     display: flex;
     font-size: 3rem;
     justify-content: space-evenly;
     padding: 1rem 0;
+    margin: 2rem 0;
     width: 100%;
+}
+
+
+a:link {
+    color: #435334;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+a:visited {
+    color: #435334;
+}
+
+a:hover {
+    color: white;
+}
+
+a:active {
+    color: white;
 }
 
 main {
