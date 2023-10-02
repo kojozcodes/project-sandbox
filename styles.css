@@ -132,7 +132,7 @@ article p {
 figure {
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(./../img/lucky-shrub-promo.jpg);
+    background-image: url(./lucky-shrub-promo.jpg);
     color: #435334;
     font-size: 3rem;
     padding-top: 2rem;
