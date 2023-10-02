@@ -47,6 +47,9 @@ table {
 	border-spacing: 0;
 }
 
+* {
+    box-sizing: border-box;
+}
 
 header, nav, main {
     display: flex;
@@ -56,8 +59,13 @@ header, nav, main {
     max-width: 80%;
 }
 
+header, main, figure {
+    border-radius: 2rem;
+}
+
 body {
     background-color: #CEDEBD;
+    font-family: 'Akaya Telivigala', cursive;
 }
 
 header {
@@ -72,7 +80,7 @@ header img {
 nav ul {
     background-color: #CEDEBD;
     display: flex;
-    font-size: 2rem;
+    font-size: 3rem;
     justify-content: space-evenly;
     padding: 1rem 0;
     width: 100%;
@@ -81,45 +89,88 @@ nav ul {
 main {
     background-color: #9EB384;
     flex-direction: column;
+    color: #435334;
+    padding: 2rem;
+    margin-bottom: 2rem;
 }
 
 .about-section {
     margin: 1rem;
 }
 
-.heading {
+h2{
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+article p {
     font-size: 3rem;
+}
+
+figure {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(./../img/lucky-shrub-promo.jpg);
+    color: #435334;
+    font-size: 3rem;
+    font-weight: bold;
+    padding-top: 2rem;
+    height: 50rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+figure h1 {
+    background-color: silver;
+    border-radius: 0;
+    padding: 2rem;
+    opacity: 0.7;
 }
 
 .team-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 1rem;
+    margin: 0 2rem;
 }
 
 img {
     margin: 1rem 0;
 }
 
+h3 {
+    font-size: 4rem;
+}
+
 .team-section div{
     display: flex;
     justify-content: center;
+    gap: 1rem;
 }
 
 .team-section article {
+    border-radius: 2rem;
     display: flex;
     flex: 1;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 2rem;
+    transition: 0.5s;
+}
+
+.team-section article:hover {
+    box-shadow: 10px 10px 5px #435334;
 }
 
 footer section{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 5rem;
     background-color: #435334;
-    width: 100%;
+    color: white;
+    font-size: 3rem;
+    gap: 5rem;
 }
